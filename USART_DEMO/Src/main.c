@@ -72,10 +72,11 @@ int main(){
     char ch;
 	uart_INIT();
 	LED_INIT();
-	printf("WELCOME TO THE WORLD OF ELECTRONICS \n");
+	printf("WELCOME TO THE MY REPO  \n");
 
 while(1){
 	ch=Uart_Read();
+	//led on 
 	if(ch=='a'){
 		*pGPIOCODR &=~(1<<13);
 	}
